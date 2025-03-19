@@ -4,7 +4,7 @@ import Model from "./Model.jsx";
 import { EffectComposer, Bloom, DepthOfField } from "@react-three/postprocessing";
 
 function Background() {
-    return <color attach="background" args={["#414A4C"]} />;
+    return <color attach="background" args={["#000"]} />;
 }
 
 export default function Scene() {
@@ -12,7 +12,7 @@ export default function Scene() {
         <div style={{ position: "relative", width: "100vw", height: "100vh" }}>
             <Canvas>
                 <directionalLight position={[-5, -5, 5]} intensity={4} />
-                <ScrollControls pages={3} damping={0.25}>
+                <ScrollControls pages={4} damping={0.25}>
                     <Model />
                 </ScrollControls>
                 <Background />
@@ -23,6 +23,7 @@ export default function Scene() {
             </Canvas>
             <div className="absolute bottom-20 w-full text-center text-white text-xs">
                 [ Scroll Out ]
+                <p><i>in progress</i></p>
             </div>
         </div>
     );
