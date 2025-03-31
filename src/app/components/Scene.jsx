@@ -25,7 +25,7 @@ export default function Scene() {
                 [ Scroll Out ]
                 <p><i>in progress</i></p>
             </div>
-            <div className="absolute border-white border-1 inset-[5%] pointer-events-none"></div>
+            <div className="absolute mt-[-1%] border-white border-1 inset-[5%] pointer-events-none"></div>
         </div>
     );
 }
