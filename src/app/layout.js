@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar/>
+        <div className="absolute z-1 mt-[-1%] border-white border-1 inset-[5%] pointer-events-none"></div>
         {children}
       </body>
     </html>
