@@ -13,7 +13,7 @@ function FlowingMenu({ items = [] }) {
   );
 }
 
-function MenuItem({ link, title, text, image }) {
+function MenuItem({ link, title, tech, text, image }) {
   const itemRef = React.useRef(null);
   const marqueeRef = React.useRef(null);
 
@@ -56,15 +56,19 @@ function MenuItem({ link, title, text, image }) {
 
   const content = (
     <React.Fragment>
-      <span className="text-[#060606] uppercase font-normal text-[2vh] leading-[1.2] p-[1vh_1vw_0]">
+      <span className="text-[#060606] uppercase font-normal text-xs sm:text-sm md:text-lg lg:text-xl leading-[1.2] p-[1vh_1vw_0]">
         {text}
       </span>
+
       <div
-        className="w-[300px] h-[10vh] my-[2em] mx-[2vw] p-[1em_0] bg-cover bg-center"
+        className="hidden sm:block w-full sm:w-3/4 md:w-1/2 lg:w-1/3 h-[18vh] my-[2em] mx-[2vw] p-[1em_0] bg-cover bg-center"
         style={{ backgroundImage: `url(${image})` }}
       />
     </React.Fragment>
   );
+  
+  
+  
 
   return (
     <div className="flex-1 relative overflow-hidden text-center shadow-[0_-1px_0_0_#fff]" ref={itemRef}>
@@ -74,7 +78,7 @@ function MenuItem({ link, title, text, image }) {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {title}
+        <span className='text-[25%]'>{tech}</span> {title}
       </a>
       <div
         className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none bg-white translate-y-[101%]"

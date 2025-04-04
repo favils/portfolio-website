@@ -9,10 +9,9 @@ function ProjectsPage() {
   const [isDesigns, setIsDesigns] = useState(false);
 
   return (
-    <div className="flex flex-col items-center mt-10 p-6">
+    <div className="flex flex-col items-center mt-20 p-6">
       <ToggleButton isDesigns={isDesigns} setIsDesigns={setIsDesigns} />
-
-      <div className="mt-6 w-full">
+      <div className="w-full">
         {isDesigns ? <Designs /> : <Projects />}
       </div>
     </div>

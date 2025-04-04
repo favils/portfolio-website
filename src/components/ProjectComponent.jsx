@@ -22,6 +22,7 @@ const Projects = () => {
     const flowingMenuItems = projects.map((project) => ({
         link: project.githubRepo,
         title: project.title,
+        tech: project.technologies,
         text: project.description,
         image: project.image,
     }));
