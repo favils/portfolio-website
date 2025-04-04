@@ -21,9 +21,8 @@ export default function Scene() {
                     <Bloom radius={100} opacity={0.4} intensity={2} luminanceThreshold={0.2} luminanceSmoothing={1} height={480}/>
                 </EffectComposer>
             </Canvas>
-            <div className="absolute bottom-20 w-full text-center text-white text-xs">
-                [ Scroll Out ]
-                <p><i>in progress</i></p>
+            <div className="font-bold absolute bottom-20 w-full text-center text-white text-xs">
+                Scroll Out
             </div>
         </div>
     );

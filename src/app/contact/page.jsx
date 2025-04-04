@@ -1,8 +1,10 @@
 "use client";
 
+
 const ContactPage = () => {
   return (
       <>
+
       </>
   );
 };
