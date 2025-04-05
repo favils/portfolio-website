@@ -7,7 +7,9 @@ export default function Intro() {
     return (
       <div className="h-full p-[1rem] bg-emerald-100 flex flex-col text-4xl">
         <DecryptedText
-            text="Hey! I'm Fatima.  I'm a full-stack developer."
+            text="Hey! I'm Fatima ✽
+            
+            I'm a full-stack developer."
             speed={100}
             maxIterations={20}
             className="revealed"
@@ -20,6 +22,7 @@ export default function Intro() {
             <Link href="https://www.linkedin.com/in/fatimavillena/" className="transition duration-300 ease hover:scale-120">
                 <Image
                     src="/linkedin.png"
+                    alt="linkedin"
                     height={50}
                     width={50}
                 />
@@ -27,6 +30,7 @@ export default function Intro() {
             <Link href="https://github.com/favils" className="transition duration-300 ease hover:scale-120">
                 <Image
                     src="/github.png"
+                    alt="github"
                     height={50}
                     width={50}
                 />
