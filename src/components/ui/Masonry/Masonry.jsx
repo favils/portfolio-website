@@ -70,7 +70,7 @@ function Masonry({ data }) {
           style={style}
           className="absolute p-[15px] [will-change:transform,width,height,opacity]"
         >
-          <div className="relative w-full h-full overflow-hidden uppercase text-[10px] leading-[10px] rounded-4xl transition duration-300 ease hover:scale-110">
+          <div className="relative w-full h-full overflow-hidden leading-[10px] rounded-4xl transition duration-300 ease hover:scale-110">
             {item.component}
           </div>
         </a.div>

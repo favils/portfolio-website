@@ -3,7 +3,7 @@ import Waves from "./ui/Waves/Waves";
 export default function Test() {
   return (
     <div className="h-full bg-amber-200">
-      <Waves
+      {/* <Waves
         lineColor="white"
         backgroundColor="transparent"
         waveSpeedX={0.0125}
@@ -16,7 +16,7 @@ export default function Test() {
         tension={0.005}
         maxCursorMove={100}
         style={{ height: '300px', width: '100%' }} 
-      />
+      /> */}
     </div>
   );
 }

@@ -7,6 +7,7 @@ import Intro from "@/components/Intro";
 
 const data = [
   { id: 1, component: <Test/>, height: 500},
+  { id: 2, component: <Intro/>, height: 600},
   ];
 
 export default function Home() {
