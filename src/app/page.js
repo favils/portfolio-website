@@ -7,6 +7,7 @@ import ASL from "@/components/ASL";
 import Sales from "@/components/SalesTranscript";
 import Pics from "@/components/Pics";
 import MadeWith from "@/components/MadeWith";
+import Info from "@/components/Info";
 
 const data = [
   { id: 1, component: <FunWave/>, height: 500},
@@ -14,14 +15,15 @@ const data = [
   { id: 3, component: <ASL/>, height: 900},
   { id: 4, component: <Sales/>, height:800},
   { id:5, component: <Pics/>, height: 400},
-  { id: 6, component: <MadeWith/>, height: 200}
+  { id: 6, component: <MadeWith/>, height: 200},
+  { id: 7, component: <Info/>, height: 300},
   ];
 
 export default function Home() {
   return (
     <>
     <div className="mt-1 ml-5">FATIMA VILLENA © 2025</div>
-    <div className="flex w-full md:w-1/2 m-auto">
+    <div className="flex w-full mt-20 md:w-1/2 m-auto">
       <Masonry data={data} />
     </div>
     </>

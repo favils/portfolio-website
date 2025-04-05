@@ -21,9 +21,9 @@ export default function Pics() {
 
     return (
 
-      <div className="h-full border-2 border-black rounded-4xl bg-white">
-        <div className="mt-2 flex justify-center text-sm italic">
-        [ Refresh for New Pictures ]
+      <div className="h-full border-2 border-[#5ce1e6] rounded-4xl bg-white">
+        <div className="mt-2 flex justify-center text-sm text-[#5ce1e6] italic">
+        Refresh for New Pictures
         </div>
         <BounceCards
             className="custom-bounceCards mt-[-30px]"

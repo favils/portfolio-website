@@ -5,7 +5,7 @@ export default function MadeWith() {
     return (
         <div className="bg-black min-h-screen text-white pt-3 pl-4 text-xs">
             
-            <div className="flex flex-row items-center ml-auto mt-1.5 justify-center gap-2">
+            <div className="flex flex-row items-center ml-auto mt-1.5 justify-center gap-1">
             Website made with 
             <RotatingText
                 texts={['ReactBits', 'NextJS', 'JavaScript', 'Tailwind CSS', 'React', 'Framer Motion', 'GSAP']}
