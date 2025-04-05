@@ -2,7 +2,7 @@
 
 import Masonry from "@/components/ui/Masonry/Masonry";
 import Test from "@/components/Test";
-import Image from "next/image";
+import Waves from "@/components/ui/Waves/Waves";
 import Intro from "@/components/Intro";
 
 const data = [

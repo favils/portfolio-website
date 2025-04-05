@@ -100,11 +100,18 @@ const Waves = ({
     ctxRef.current = canvas.getContext("2d");
 
     function setSize() {
-      boundingRef.current = container.getBoundingClientRect();
+      const boundingRect = containerRef.current.getBoundingClientRect();
+      boundingRef.current = {
+        width: boundingRect.width || 400,
+        height: boundingRect.height || 220,
+        left: boundingRect.left,
+        top: boundingRect.top,
+      };
       canvas.width = boundingRef.current.width;
       canvas.height = boundingRef.current.height;
+      console.log("Canvas size set:", boundingRef.current);
     }
-
+    
     function setLines() {
       const { width, height } = boundingRef.current;
       linesRef.current = [];

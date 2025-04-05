@@ -13,7 +13,7 @@ function Masonry({ data }) {
       } else if (window.matchMedia('(min-width: 600px)').matches) {
         setColumns(2);
       } else {
-        setColumns(2);
+        setColumns(1); // Mobile devices
       }
     };
 
@@ -66,9 +66,9 @@ function Masonry({ data }) {
     >
       {transitions((style, item) => (
         <a.div
-          key={item.id}
-          style={style}
-          className="absolute p-[15px] [will-change:transform,width,height,opacity]"
+        key={item.id}
+        style={style}
+        className="absolute p-[15px] [will-change:transform,width,height,opacity]"
         >
           <div className="relative w-full h-full overflow-hidden leading-[10px] rounded-4xl transition duration-300 ease hover:scale-110">
             {item.component}

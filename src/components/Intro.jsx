@@ -19,7 +19,7 @@ export default function Intro() {
             revealDirection="start"
         />
         <div className="flex flex-row ml-auto gap-2 mt-auto">
-            <Link href="https://www.linkedin.com/in/fatimavillena/" className="transition duration-300 ease hover:scale-120">
+            <Link href="https://www.linkedin.com/in/fatimavillena/" className="transition duration-300 ease hover:scale-120 hover:drop-shadow-lg">
                 <Image
                     src="/linkedin.png"
                     alt="linkedin"
@@ -27,7 +27,7 @@ export default function Intro() {
                     width={50}
                 />
             </Link>
-            <Link href="https://github.com/favils" className="transition duration-300 ease hover:scale-120">
+            <Link href="https://github.com/favils" className="transition duration-300 ease hover:scale-120 hover:drop-shadow-lg">
                 <Image
                     src="/github.png"
                     alt="github"
