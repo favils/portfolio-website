@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
 import Waves from "./ui/Waves/Waves";
 
-export default function Test() {
-  useEffect(() => {
-    console.log("Waves component mounted");
-  }, []);
+export default function FunWave() {
 
   return (
     <div className="h-full border-2 border-black rounded-4xl bg-white">

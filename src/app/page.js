@@ -1,13 +1,14 @@
 'use client'
 
 import Masonry from "@/components/ui/Masonry/Masonry";
-import Test from "@/components/Test";
-import Waves from "@/components/ui/Waves/Waves";
+import FunWave from "@/components/FunWave";
 import Intro from "@/components/Intro";
+import ASL from "@/components/ASL";
 
 const data = [
-  { id: 1, component: <Test/>, height: 500},
+  { id: 1, component: <FunWave/>, height: 500},
   { id: 2, component: <Intro/>, height: 600},
+  { id: 3, component: <ASL/>, height: 900},
   ];
 
 export default function Home() {
