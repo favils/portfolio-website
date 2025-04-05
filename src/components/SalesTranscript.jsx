@@ -6,7 +6,7 @@ export default function Sales(){
     return (
         <div className="h-full bg-white relative">
               <Image
-                src="/Sales.png"
+                src="/sales.png"
                 alt="ASL Interpreter"
                 width={0}
                 height={0}
