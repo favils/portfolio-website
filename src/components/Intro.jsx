@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Intro() {
     return (
-      <div className="h-full p-[1rem] bg-emerald-100 flex flex-col text-4xl">
+      <div className="h-full p-[1rem] bg-emerald-100 flex flex-col text-lg md:text-4xl">
         <DecryptedText
             text="Hey! I'm Fatima ✽
             
