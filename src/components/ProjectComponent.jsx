@@ -28,7 +28,7 @@ const Projects = () => {
     }));
 
     return (
-        <div className="relative z-10 h-[90vh] flex items-center justify-center">
+        <div className="relative z-10 h-[80vh] flex items-center justify-center">
             <div className="w-[80%] h-full overflow-y-auto px-4 py-8 space-y-8">
                 <div style={{ height: '600px', position: 'relative' }}>
                     <FlowingMenu items={flowingMenuItems} />
