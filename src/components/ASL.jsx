@@ -20,7 +20,7 @@ export default function ASL() {
         className="transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-1"
       />
 
-      <div className="absolute top-10 left-18 text-white text-right text-3xl bg-black px-4 py-2 rounded-xl">
+      <div className="hidden lg:block absolute top-10 left-18 text-white text-right text-3xl bg-black px-4 py-2 rounded-xl">
         ASL
         <br />
         Interpreter.
