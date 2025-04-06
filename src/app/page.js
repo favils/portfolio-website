@@ -8,6 +8,8 @@ import Sales from "@/components/SalesTranscript";
 import Pics from "@/components/Pics";
 import MadeWith from "@/components/MadeWith";
 import Info from "@/components/Info";
+import Brand from "@/components/Branding";
+import Clarity from "@/components/Clarity";
 
 const data = [
   { id: 1, component: <FunWave/>, height: 500},
@@ -17,6 +19,8 @@ const data = [
   { id:5, component: <Pics/>, height: 400},
   { id: 6, component: <MadeWith/>, height: 200},
   { id: 7, component: <Info/>, height: 300},
+  { id: 8, component: <Brand/>, height: 600},
+  { id: 9, component: <Clarity/>, height: 600}
   ];
 
 export default function Home() {

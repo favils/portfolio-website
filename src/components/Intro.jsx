@@ -9,7 +9,7 @@ export default function Intro() {
         <DecryptedText
             text="Hey! I'm Fatima ✽
             
-            I'm a full-stack developer."
+            I'm a full-stack developer/graphic designer."
             speed={100}
             maxIterations={20}
             sequential="true"
