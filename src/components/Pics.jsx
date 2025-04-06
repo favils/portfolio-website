@@ -21,12 +21,12 @@ export default function Pics() {
 
     return (
 
-      <div className="h-full border-2 border-[#5ce1e6] rounded-4xl bg-white">
+      <div className="h-full overflow-hidden bg-white">
         <div className="mt-2 flex justify-center text-sm text-[#5ce1e6] italic">
         Refresh for New Pictures
         </div>
         <BounceCards
-            className="custom-bounceCards mt-[-30px]"
+            className="custom-bounceCards flex mt-[-30px]"
             images={images}
             animationDelay={1}
             animationStagger={0.08}

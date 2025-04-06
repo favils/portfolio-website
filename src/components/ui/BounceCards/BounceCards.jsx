@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 export default function BounceCards({
   className = "",
   images = [],
-  containerWidth = 200,
+  containerWidth = 390,
   containerHeight = 200,
   animationDelay = 0.5,
   animationStagger = 0.06,
@@ -121,7 +121,6 @@ export default function BounceCards({
           key={idx}
           className={`card card-${idx} absolute w-[90px] aspect-square border-4 border-white rounded-[30px] overflow-hidden`}
           style={{
-            boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
             transform: transformStyles[idx] || "none",
           }}
           onMouseEnter={() => pushSiblings(idx)}
