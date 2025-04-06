@@ -13,7 +13,7 @@ function Masonry({ data }) {
       } else if (window.matchMedia('(min-width: 600px)').matches) {
         setColumns(2);
       } else {
-        setColumns(2); // Mobile devices
+        setColumns(1); // Mobile devices
       }
     };
 
