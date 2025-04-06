@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <>
     <div className="mt-1 ml-5">FATIMA VILLENA © 2025</div>
-    <div className="flex w-full mt-20 lg:w-2/3 m-auto">
+    <div className="flex w-full mt-10 lg:w-2/3 m-auto">
       <Masonry data={data} />
     </div>
     </>

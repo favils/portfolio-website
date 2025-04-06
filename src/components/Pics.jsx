@@ -22,7 +22,7 @@ export default function Pics() {
     return (
 
       <div className="h-full overflow-hidden bg-white">
-        <div className="mt-2 flex justify-center text-sm text-[#5ce1e6] italic">
+        <div className="mt-2 flex justify-center text-sm italic">
         Refresh for New Pictures
         </div>
         <BounceCards
