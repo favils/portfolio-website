@@ -10,17 +10,19 @@ import MadeWith from "@/components/MadeWith";
 import Info from "@/components/Info";
 import Brand from "@/components/Branding";
 import Clarity from "@/components/Clarity";
+import Liora from "@/components/Liora";
 
 const data = [
   { id: 1, component: <FunWave/>, height: 500},
   { id: 2, component: <Intro/>, height: 600},
-  { id: 3, component: <ASL/>, height: 900},
+  { id: 3, component: <Liora/>, height: 500},
   { id: 4, component: <Sales/>, height:800},
-  { id:5, component: <Pics/>, height: 400},
-  { id: 6, component: <MadeWith/>, height: 200},
-  { id: 7, component: <Info/>, height: 300},
-  { id: 8, component: <Brand/>, height: 600},
-  { id: 9, component: <Clarity/>, height: 600}
+  { id: 5, component: <Clarity/>, height: 600},
+  { id: 6, component: <Pics/>, height: 400},
+  { id: 7, component: <MadeWith/>, height: 200},
+  { id: 8, component: <Info/>, height: 300},
+  { id: 9, component: <Brand/>, height: 600},
+  { id: 10, component: <ASL/>, height: 700},
   ];
 
 export default function Home() {
