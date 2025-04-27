@@ -8,13 +8,9 @@ export default function Liora() {
             <Image
                 src="/liora.png"
                 alt="Ecommerce Website"
-                width={0}
-                height={0}
-                sizes="100vw"
+                fill
                 style={{
                   objectFit: "cover",
-                  height: "100%",
-                  width: "auto",
                 }}
                 className="transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-1"
               />
