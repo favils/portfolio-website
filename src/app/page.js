@@ -12,6 +12,7 @@ import Info from "@/components/Info";
 import Brand from "@/components/Branding";
 import Clarity from "@/components/Clarity";
 import Liora from "@/components/Liora";
+import Film from "@/components/Film";
 
 const rawData = [
   { id: 1, component: <FunWave/>, height: 500, categories: ["all"] },
@@ -24,6 +25,7 @@ const rawData = [
   { id: 8, component: <Info/>, height: 300, categories: ["all"] },
   { id: 9, component: <Brand/>, height: 600, categories: ["all", "designs"] },
   { id: 10, component: <ASL/>, height: 700, categories: ["all", "sites"] },
+  { id: 10, component: <Film/>, height: 600, categories: ["all", "designs"] }
 ];
 
 export default function Home() {
