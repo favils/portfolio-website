@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function ASL() {
     return (
-        <div className="h-full bg-white overflow-hidden relative">
+        <div className="group h-full bg-white overflow-hidden relative">
             <Image
                 src="/ASLI.png"
                 alt="ASL Interpreter"
@@ -20,10 +20,8 @@ export default function ASL() {
                 className="transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-1"
             />
 
-            <div className="hidden lg:block absolute top-10 left-18 text-white text-right text-3xl bg-black px-4 py-2 rounded-xl">
-                ASL
-                <br />
-                Interpreter.
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center text-3xl bg-black px-6 py-3 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                ASL Interpreter
             </div>
 
             <Link href="https://github.com/favils/ASL-Interpreter" target="_blank" rel="noopener noreferrer">
