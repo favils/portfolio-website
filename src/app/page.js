@@ -27,7 +27,7 @@ const rawData = [
   { id: 9, component: <Brand/>, height: 600, categories: ["all", "designs"] },
   { id: 10, component: <RealE/>, height: 700, categories: ["all", "designs"] },
   { id: 11, component: <Film/>, height: 600, categories: ["all", "designs"] },
-  { id: 12, component: <ASL/>, height: 600, categories: ["all", "designs"] }
+  { id: 12, component: <ASL/>, height: 600, categories: ["all", "sites"] }
 ];
 
 export default function Home() {
