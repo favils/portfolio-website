@@ -14,6 +14,7 @@ import Clarity from "@/components/Clarity";
 import Liora from "@/components/Liora";
 import Film from "@/components/Film";
 import RealE from "@/components/Realtor";
+import Resumely from "@/components/Resumely";
 
 const rawData = [
   { id: 1, component: <FunWave/>, height: 500, categories: ["all"] },
@@ -21,13 +22,14 @@ const rawData = [
   { id: 3, component: <Liora/>, height: 500, categories: ["all", "sites"] },
   { id: 4, component: <Sales/>, height: 800, categories: ["all", "sites"] },
   { id: 5, component: <Clarity/>, height: 600, categories: ["all", "designs"] },
-  { id: 6, component: <Pics/>, height: 400, categories: ["all"] },
-  { id: 7, component: <MadeWith/>, height: 200, categories: ["all"] },
-  { id: 8, component: <Info/>, height: 300, categories: ["all"] },
-  { id: 9, component: <Brand/>, height: 600, categories: ["all", "designs"] },
-  { id: 10, component: <RealE/>, height: 700, categories: ["all", "designs"] },
-  { id: 11, component: <Film/>, height: 600, categories: ["all", "designs"] },
-  { id: 12, component: <ASL/>, height: 600, categories: ["all", "sites"] }
+  { id: 6, component: <Resumely/>, height: 600, categories: ["all", "sites"] },
+  { id: 7, component: <Pics/>, height: 400, categories: ["all"] },
+  { id: 8, component: <MadeWith/>, height: 200, categories: ["all"] },
+  { id: 9, component: <Info/>, height: 300, categories: ["all"] },
+  { id: 10, component: <Brand/>, height: 600, categories: ["all", "designs"] },
+  { id: 11, component: <RealE/>, height: 700, categories: ["all", "designs"] },
+  { id: 12, component: <Film/>, height: 600, categories: ["all", "designs"] },
+  { id: 13, component: <ASL/>, height: 600, categories: ["all", "sites"] }
 ];
 
 export default function Home() {
