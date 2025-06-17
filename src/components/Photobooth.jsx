@@ -7,8 +7,8 @@ export default function Photobooth() {
     return (
         <div className="group h-full bg-white overflow-hidden relative">
             <Image
-                src="/ASLI.png"
-                alt="ASL Interpreter"
+                src="/photobooth.png"
+                alt="Photobooth"
                 width={0}
                 height={0}
                 sizes="100vw"
