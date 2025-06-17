@@ -7,7 +7,7 @@ export default function Photobooth() {
     return (
         <div className="group h-full bg-white overflow-hidden relative">
             <Image
-                src="/photobooth.png"
+                src="/photobooth.gif"
                 alt="Photobooth"
                 width={0}
                 height={0}
