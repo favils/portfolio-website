@@ -16,11 +16,13 @@ import Film from "@/components/Film";
 import RealE from "@/components/Realtor";
 import Resumely from "@/components/Resumely";
 import Photobooth from "@/components/Photobooth";
+import Caring from "@/components/CaringHorizon";
 
 const rawData = [
   { id: 1, component: <FunWave/>, height: 500, categories: ["all"] },
   { id: 2, component: <Intro/>, height: 600, categories: ["all"] },
   { id: 14, component: <Photobooth/>, height: 600, categories: ["all", "sites"] },
+  { id: 15, component: <Caring/>, height: 1400, categories: ["all", "sites"] },
   { id: 3, component: <Liora/>, height: 500, categories: ["all", "sites"] },
   { id: 4, component: <Sales/>, height: 800, categories: ["all", "sites"] },
   { id: 5, component: <Clarity/>, height: 600, categories: ["all", "designs"] },
