@@ -7,7 +7,7 @@ export default function Caring() {
     return (
         <div className="h-full bg-white overflow-hidden relative">
             <Image
-                src="/caring.png"
+                src="/Caring.png"
                 alt="Caring Horizon"
                 width={0}
                 height={0}
