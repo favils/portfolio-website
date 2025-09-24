@@ -12,12 +12,7 @@ export default function Photobooth() {
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{
-                    objectFit: "cover",
-                    height: "100%",
-                    width: "auto",
-                }}
-                className="transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-1"
+                className="w-full h-auto object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 hover:rotate-1"
             />
 
             <Link href="https://github.com/favils/photobooth" target="_blank" rel="noopener noreferrer">
