@@ -24,11 +24,8 @@ export default function Hero() {
 
         <RevealOnScroll delay={0.1}>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-paper-dim">
-            I&apos;m a full-stack developer and graphic designer based in
-            Miami, FL. I studied computer science at NYU, and now split my
-            time between production code and visual design — internal tools
-            and dashboards by day, branding and interface design on the
-            side.
+            Full-stack developer and graphic designer based in Miami, FL.
+            NYU CS grad, splitting time between code and design.
           </p>
         </RevealOnScroll>
 
@@ -37,7 +34,6 @@ export default function Hero() {
             <BracketButton href="#software" icon="■" external={false}>
               EXPLORE SOFTWARE
             </BracketButton>
-            <AnnotatedLink href="/resume.pdf">RESUME</AnnotatedLink>
             <AnnotatedLink href="https://github.com/favils">
               GITHUB
             </AnnotatedLink>
@@ -71,12 +67,9 @@ export default function Hero() {
               {"{ what i build }"}
             </div>
             <p className="mt-4 text-base leading-relaxed text-paper-dim">
-              Full-stack web applications and internal tools — React/Next.js
-              frontends, PHP and Node backends, MySQL schemas designed from
-              scratch. I&apos;ve also built a handful of computer-vision side
-              projects, including an ASL hand-gesture interpreter and a
-              facial recognition attendance system, both trained and shipped
-              as working prototypes rather than demos.
+              Full-stack web apps and internal tools, plus computer-vision
+              side projects like an ASL hand-gesture interpreter — shipped
+              as working prototypes, not just demos.
             </p>
           </RevealOnScroll>
 
@@ -85,11 +78,9 @@ export default function Hero() {
               {"{ outside of work }"}
             </div>
             <p className="mt-4 text-base leading-relaxed text-paper-dim">
-              Graphic design and branding work, video editing, and building
-              small, slightly unnecessary side projects — a browser
+              Graphic design, branding, and small side projects — a browser
               photobooth, an ecommerce store for a friend&apos;s jewelry
-              brand — mostly as an excuse to keep both the design and
-              engineering muscles moving at the same time.
+              brand.
             </p>
           </RevealOnScroll>
         </div>

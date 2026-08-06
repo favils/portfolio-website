@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X, Mail, Github, Linkedin, FileDown } from "lucide-react";
+import { Menu, X, Mail, Github, Linkedin } from "lucide-react";
 import FolderIcon from "@/components/ui/FolderIcon";
 
 const FOLDERS = [
@@ -33,7 +33,6 @@ const FOLDERS = [
         href: "https://www.linkedin.com/in/fatimavillena/",
         icon: Linkedin,
       },
-      { label: "resume", href: "/resume.pdf", icon: FileDown },
     ],
   },
 ];
