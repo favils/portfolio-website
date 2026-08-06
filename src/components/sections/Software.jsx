@@ -9,15 +9,13 @@ import WindowFrame from "@/components/ui/WindowFrame";
 import { projects } from "@/data/projects";
 
 const TABS = [
-  { id: "all", label: "ALL" },
   { id: "engineering", label: "ENGINEERING" },
   { id: "design", label: "WEB / DESIGN" },
 ];
 
 export default function Software() {
-  const [tab, setTab] = useState("all");
-  const filtered =
-    tab === "all" ? projects : projects.filter((p) => p.category === tab);
+  const [tab, setTab] = useState("engineering");
+  const filtered = projects.filter((p) => p.category === tab);
 
   return (
     <section id="software" className="scroll-mt-24 border-t border-hairline">
