@@ -1,12 +1,24 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
+import { Space_Mono } from "next/font/google";
 import Nav from "@/components/layout/Nav";
+import GrainOverlay from "@/components/layout/GrainOverlay";
+import BlueprintGrid from "@/components/layout/BlueprintGrid";
+import CoordinateReadout from "@/components/layout/CoordinateReadout";
 
-const inter = Inter({
+const departureMono = localFont({
+  src: "../../public/fonts/DepartureMono-Regular.woff2",
+  variable: "--font-departure-mono",
+  display: "swap",
+  weight: "400",
+  style: "normal",
+});
+
+const spaceMono = Space_Mono({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-space-mono",
+  weight: ["400", "700"],
 });
 
 export const metadata = {
@@ -18,16 +30,24 @@ export const metadata = {
 export const viewport = {
   width: "device-width",
   initialScale: 1,
+  themeColor: "#060506",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.variable}>
-        <div className="mx-auto flex max-w-[1560px]">
+      <body
+        className={`${departureMono.variable} ${spaceMono.variable} font-body`}
+      >
+        <BlueprintGrid />
+        <GrainOverlay />
+        <div className="relative z-10 mx-auto flex max-w-[1560px] xl:px-10">
           <Nav />
-          <main className="min-w-0 flex-1">{children}</main>
+          <main className="min-w-0 flex-1 border-x border-hairline/60">
+            {children}
+          </main>
         </div>
+        <CoordinateReadout />
       </body>
     </html>
   );
