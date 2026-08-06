@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-void: #060506;
-  --color-panel: #100f13;
-  --color-panel-raised: #18171c;
-  --color-hairline: #262530;
-  --color-hairline-bright: #3c3a48;
-  --color-paper: #f6f5fa;
-  --color-paper-dim: #a6a3b8;
-  --color-paper-faint: #67637a;
+  --color-void: #ffffff;
+  --color-panel: #f6f6f7;
+  --color-panel-raised: #eeedf0;
+  --color-hairline: #e3e2e6;
+  --color-hairline-bright: #cfced4;
+  --color-paper: #333333;
+  --color-paper-dim: #59585d;
+  --color-paper-faint: #8a898e;
   --color-signal: #9b87f5;
   --color-signal-bright: #bba9ff;
   --color-signal-dim: #2b2350;
@@ -24,7 +24,7 @@
 
 html {
   background: var(--color-void);
-  color-scheme: dark;
+  color-scheme: light;
   scroll-behavior: smooth;
 }
 
@@ -72,29 +72,6 @@ a {
     transparent 1px,
     transparent 3px
   );
-}
-
-/* --- blueprint grid --- */
-.blueprint-grid {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background-image:
-    linear-gradient(to right, var(--color-hairline) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--color-hairline) 1px, transparent 1px);
-  background-size: 88px 88px;
-  opacity: 0.35;
-  mask-image: linear-gradient(to bottom, black, black 60%, transparent 100%);
-}
-
-.tick-corner {
-  position: fixed;
-  width: 14px;
-  height: 14px;
-  z-index: 1;
-  pointer-events: none;
-  border-color: var(--color-hairline-bright);
 }
 
 @media (prefers-reduced-motion: reduce) {

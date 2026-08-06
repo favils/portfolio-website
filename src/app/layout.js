@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import { Space_Mono } from "next/font/google";
 import Nav from "@/components/layout/Nav";
 import GrainOverlay from "@/components/layout/GrainOverlay";
-import BlueprintGrid from "@/components/layout/BlueprintGrid";
 import CoordinateReadout from "@/components/layout/CoordinateReadout";
 
 const departureMono = localFont({
@@ -30,7 +29,7 @@ export const metadata = {
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#060506",
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({ children }) {
@@ -39,7 +38,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${departureMono.variable} ${spaceMono.variable} font-body`}
       >
-        <BlueprintGrid />
         <GrainOverlay />
         <div className="relative z-10 mx-auto flex max-w-[1560px] xl:px-10">
           <Nav />
