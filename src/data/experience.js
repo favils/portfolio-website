@@ -37,19 +37,17 @@ export const education = {
 };
 
 export const skills = {
-  Languages: ["Java", "JavaScript", "Python", "PHP", "SQL"],
+  Languages: ["Java", "JavaScript ES6+", "Python", "SQL"],
   "Frameworks & Libraries": [
     "React",
     "Next.js",
     "Node.js",
     "Express",
     "Flask",
-    "jQuery",
     "Tailwind CSS",
   ],
   "Tools & Platforms": [
     "Git",
-    "GitHub Actions",
     "Docker",
     "Cloudflare R2",
     "Vercel",

@@ -20,7 +20,7 @@ export const projects = [
     image: "/resumely.png",
     type: "WEB APP — RESUME GENERATOR",
     category: "engineering",
-    blurb: "Generates polished, ATS-friendly resumes from structured user input.",
+    blurb: "Generates ATS-friendly resumes from structured user input.  Template based on Jake's Resume.",
     github: "https://github.com/favils/resume.ly",
     live: "https://resume-generator-bxf0.onrender.com/",
   },
@@ -30,7 +30,7 @@ export const projects = [
     type: "COMPUTER VISION",
     category: "engineering",
     blurb:
-      "Recognizes ASL hand gestures from a live camera feed using OpenCV and machine learning, served through a Flask backend and containerized with Docker.",
+      "Recognizes certain ASL hand gestures from a live camera feed using OpenCV and machine learning, served through a Flask backend and containerized with Docker.",
     stack: ["Python", "Flask", "MongoDB", "Docker"],
     github: "https://github.com/favils/ASL-Interpreter",
     live: "https://web-app-4tma.onrender.com/",
@@ -40,7 +40,7 @@ export const projects = [
     type: "COMPUTER VISION",
     category: "engineering",
     blurb:
-      "Real-time facial recognition attendance system using OpenCV and face_recognition, with a REST API and dashboard for viewing attendance data. Tested on a class of 100 students, cutting attendance-taking time by 80%.",
+      "Real-time facial recognition attendance system using OpenCV and face_recognition, with a REST API and dashboard for viewing attendance data. Tested on a class of 80~ students.",
     stack: ["Python", "OpenCV", "Flask", "SQLite"],
   },
   {
@@ -48,7 +48,7 @@ export const projects = [
     image: "/photobooth.png",
     type: "WEB APP",
     category: "engineering",
-    blurb: "Browser-based photobooth — capture, filter, and export photo strips entirely client-side.",
+    blurb: "Browser-based photobooth to create chic photo strips from anywhere.",
     github: "https://github.com/favils/photobooth",
     live: "https://photobooth-pink.vercel.app/",
   },

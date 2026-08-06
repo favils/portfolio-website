@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="relative mx-auto max-w-5xl px-6 pb-20 pt-20 sm:px-10 sm:pt-24 lg:px-16 lg:pt-32">
         <RevealOnScroll>
           <div className="font-mono text-[12px] text-paper-faint">
-            {"{ full-stack developer, graphic designer }"}
+            {"{ software engineer and graphic design hobbyist }"}
           </div>
         </RevealOnScroll>
 
