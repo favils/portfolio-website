@@ -6,7 +6,7 @@ export const roles = [
     location: "Miami, FL",
     points: [
       "Independently refactored a PHP partnership-management platform from a flat, duplicated codebase into an MVC architecture (custom Controllers/Models/Services/Views), reducing redundant logic across core modules.",
-      "Led development of a full-stack Events tracker — PHP backend, MySQL schema, REST-style API endpoints, jQuery/JS frontend — covering venue management, event tracking, and role-based access, coordinating with one other developer.",
+      "Worked on development of a full-stack Events tracker — PHP backend, MySQL schema, REST-style API endpoints, JS frontend — covering venue management, event tracking, and role-based access, coordinating with one other developer.",
       "Integrated Cloudflare R2 object storage for the assets manager and secure contract/file storage tied to contracted packages.",
       "Built an admin dashboard with live system-health monitoring and KPI reporting, querying MySQL to surface season-scoped metrics for leadership.",
     ],
@@ -35,29 +35,6 @@ export const education = {
     "Involvement: Academic Achievement Program, Girls Who Code, Latinos Unidos Con Honor y Amistad.",
   ],
 };
-
-export const featuredProjects = [
-  {
-    range: "NOV 2024",
-    title: "American Sign Language Interpreter",
-    stack: "Python, Flask, HTML/CSS, MongoDB, Docker",
-    points: [
-      "Built an ASL interpretation platform using machine learning and OpenCV to recognize hand gestures through a live camera feed and translate them into real-time output.",
-      "Implemented a Flask backend supporting smooth communication between the recognition model and the user interface.",
-      "Containerized the full application with Docker for consistent development and deployment environments.",
-    ],
-  },
-  {
-    range: "APR 2024",
-    title: "Facial Attendance System",
-    stack: "Python, OpenCV, Flask, SQLite",
-    points: [
-      "Built a real-time facial attendance system using OpenCV for face detection and the face_recognition library for encoding and identification.",
-      "Built REST API endpoints and responsive web dashboards for data viewing and management.",
-      "Tested on a class of 100 students and reduced attendance-taking time by 80%.",
-    ],
-  },
-];
 
 export const skills = {
   Languages: ["Java", "JavaScript", "Python", "PHP", "SQL"],

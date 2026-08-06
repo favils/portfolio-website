@@ -1,6 +1,6 @@
 import SectionHeader from "@/components/ui/SectionHeader";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
-import { roles, education, featuredProjects, skills } from "@/data/experience";
+import { roles, education, skills } from "@/data/experience";
 
 function Entry({ range, title, org, location, points, index, total }) {
   return (
@@ -53,38 +53,6 @@ export default function Experience() {
               <Entry {...entry} index={i} total={timeline.length} />
             </RevealOnScroll>
           ))}
-        </div>
-
-        <div className="mt-24 border-t border-hairline pt-10">
-          <div className="font-mono text-[12px] text-signal">
-            {"{ selected projects }"}
-          </div>
-          <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2">
-            {featuredProjects.map((p) => (
-              <RevealOnScroll key={p.title}>
-                <div className="font-mono text-[11px] text-paper-faint">
-                  {p.range}
-                </div>
-                <h4 className="mt-1 font-display text-lg text-paper">
-                  {p.title}
-                </h4>
-                <div className="mt-1 font-mono text-[11px] text-paper-dim">
-                  {p.stack}
-                </div>
-                <ul className="mt-3 flex flex-col gap-2">
-                  {p.points.map((pt, i) => (
-                    <li
-                      key={i}
-                      className="flex gap-2.5 text-[13px] leading-relaxed text-paper-dim"
-                    >
-                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-paper-faint" />
-                      {pt}
-                    </li>
-                  ))}
-                </ul>
-              </RevealOnScroll>
-            ))}
-          </div>
         </div>
 
         <div className="mt-24 border-t border-hairline pt-10">

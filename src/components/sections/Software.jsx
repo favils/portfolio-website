@@ -47,13 +47,21 @@ export default function Software() {
                   path={`PROJECTS \\ ${p.type} \\ <FATIMAVILLENA.COM>`}
                 >
                   <div className="relative aspect-[4/3] w-full overflow-hidden bg-void">
-                    <Image
-                      src={p.image}
-                      alt={p.title}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover grayscale-[45%] transition-all duration-500 group-hover:scale-[1.03] group-hover:grayscale-0"
-                    />
+                    {p.image ? (
+                      <Image
+                        src={p.image}
+                        alt={p.title}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover grayscale-[45%] transition-all duration-500 group-hover:scale-[1.03] group-hover:grayscale-0"
+                      />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center border border-dashed border-hairline-bright bg-panel/40">
+                        <span className="font-mono text-[10px] tracking-wide text-paper-faint">
+                          {"// no preview"}
+                        </span>
+                      </div>
+                    )}
                     <div className="absolute left-2 top-2 bg-void/80 px-1.5 py-0.5 font-mono text-[9px] tracking-wide text-paper-faint">
                       // fig.{String(i + 1).padStart(2, "0")} \\
                     </div>
@@ -81,6 +89,12 @@ export default function Software() {
                 <div className="mt-1 font-mono text-[9px] tracking-wide text-paper-faint">
                   ▪ {p.type}
                 </div>
+
+                {p.blurb && (
+                  <p className="mt-2.5 text-[13px] leading-relaxed text-paper-dim">
+                    {p.blurb}
+                  </p>
+                )}
 
                 <div className="mt-2.5 flex gap-2">
                   {p.github && (

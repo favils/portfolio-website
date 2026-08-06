@@ -20,6 +20,7 @@ export const projects = [
     image: "/resumely.png",
     type: "WEB APP — RESUME GENERATOR",
     category: "engineering",
+    blurb: "Generates polished, ATS-friendly resumes from structured user input.",
     github: "https://github.com/favils/resume.ly",
     live: "https://resume-generator-bxf0.onrender.com/",
   },
@@ -28,15 +29,26 @@ export const projects = [
     image: "/ASL.png",
     type: "COMPUTER VISION",
     category: "engineering",
+    blurb:
+      "Recognizes ASL hand gestures from a live camera feed using OpenCV and machine learning, served through a Flask backend and containerized with Docker.",
     stack: ["Python", "Flask", "MongoDB", "Docker"],
     github: "https://github.com/favils/ASL-Interpreter",
     live: "https://web-app-4tma.onrender.com/",
+  },
+  {
+    title: "Facial Attendance System",
+    type: "COMPUTER VISION",
+    category: "engineering",
+    blurb:
+      "Real-time facial recognition attendance system using OpenCV and face_recognition, with a REST API and dashboard for viewing attendance data. Tested on a class of 100 students, cutting attendance-taking time by 80%.",
+    stack: ["Python", "OpenCV", "Flask", "SQLite"],
   },
   {
     title: "Photobooth",
     image: "/photobooth.png",
     type: "WEB APP",
     category: "engineering",
+    blurb: "Browser-based photobooth — capture, filter, and export photo strips entirely client-side.",
     github: "https://github.com/favils/photobooth",
     live: "https://photobooth-pink.vercel.app/",
   },
@@ -45,6 +57,7 @@ export const projects = [
     image: "/sales.png",
     type: "HACKATHON",
     category: "engineering",
+    blurb: "Transcribes and summarizes sales calls in real time to surface key talking points, built at a hackathon.",
     github: "https://github.com/zikrya/Hackathon-Rilla",
   },
   {
