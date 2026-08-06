@@ -1,0 +1,103 @@
+import RevealOnScroll from "@/components/ui/RevealOnScroll";
+import AnnotatedLink from "@/components/ui/AnnotatedLink";
+import BracketButton from "@/components/ui/BracketButton";
+import WindowFrame from "@/components/ui/WindowFrame";
+
+export default function Hero() {
+  return (
+    <section id="about" className="relative scroll-mt-24 overflow-hidden">
+      <div className="radial-glow" aria-hidden="true" />
+      <div className="relative mx-auto max-w-5xl px-6 pb-20 pt-20 sm:px-10 sm:pt-24 lg:px-16 lg:pt-32">
+        <RevealOnScroll>
+          <div className="font-mono text-[12px] text-paper-faint">
+            {"{ full-stack developer, graphic designer }"}
+          </div>
+        </RevealOnScroll>
+
+        <RevealOnScroll delay={0.05}>
+          <h1 className="mt-6 max-w-3xl font-display text-5xl leading-[1.05] tracking-tight text-paper sm:text-6xl lg:text-7xl">
+            I design things,
+            <br />
+            then I make them work.
+          </h1>
+        </RevealOnScroll>
+
+        <RevealOnScroll delay={0.1}>
+          <p className="mt-8 max-w-xl text-lg leading-relaxed text-paper-dim">
+            I&apos;m a full-stack developer and graphic designer based in
+            Miami, FL. I studied computer science at NYU, and now split my
+            time between production code and visual design — internal tools
+            and dashboards by day, branding and interface design on the
+            side.
+          </p>
+        </RevealOnScroll>
+
+        <RevealOnScroll delay={0.15}>
+          <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3">
+            <BracketButton href="#software" icon="■" external={false}>
+              EXPLORE SOFTWARE
+            </BracketButton>
+            <AnnotatedLink href="/resume.pdf">RESUME</AnnotatedLink>
+            <AnnotatedLink href="https://github.com/favils">
+              GITHUB
+            </AnnotatedLink>
+          </div>
+        </RevealOnScroll>
+
+        <RevealOnScroll delay={0.2} className="mt-16">
+          <WindowFrame path="SYSTEM \ PROFILE \ <FATIMAVILLENA.COM>">
+            <div className="grid grid-cols-2 gap-x-6 gap-y-4 px-5 py-6 font-mono text-[11px] text-paper-faint sm:flex sm:flex-wrap sm:gap-x-12">
+              <div>
+                FILE: <span className="text-paper-dim">FATIMA_VILLENA</span>
+              </div>
+              <div>
+                BASE: <span className="text-paper-dim">MIAMI, FL</span>
+              </div>
+              <div>
+                STATUS: <span className="text-signal">ACTIVE</span>
+              </div>
+              <div>
+                REV: <span className="text-paper-dim">2026.08</span>
+              </div>
+            </div>
+          </WindowFrame>
+        </RevealOnScroll>
+      </div>
+
+      <div className="mx-auto max-w-5xl px-6 pb-24 sm:px-10 lg:px-16">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-16">
+          <RevealOnScroll>
+            <div className="font-mono text-[12px] text-signal">
+              {"{ what i build }"}
+            </div>
+            <p className="mt-4 text-base leading-relaxed text-paper-dim">
+              Full-stack web applications and internal tools — React/Next.js
+              frontends, PHP and Node backends, MySQL schemas designed from
+              scratch. I&apos;ve also built a handful of computer-vision side
+              projects, including an ASL hand-gesture interpreter and a
+              facial recognition attendance system, both trained and shipped
+              as working prototypes rather than demos.
+            </p>
+          </RevealOnScroll>
+
+          <RevealOnScroll delay={0.05}>
+            <div className="font-mono text-[12px] text-signal">
+              {"{ outside of work }"}
+            </div>
+            <p className="mt-4 text-base leading-relaxed text-paper-dim">
+              Graphic design and branding work, video editing, and building
+              small, slightly unnecessary side projects — a browser
+              photobooth, an ecommerce store for a friend&apos;s jewelry
+              brand — mostly as an excuse to keep both the design and
+              engineering muscles moving at the same time.
+            </p>
+          </RevealOnScroll>
+        </div>
+
+        <div className="mt-16 border-t border-hairline pt-6 font-mono text-[11px] text-paper-faint">
+          nyu — b.s. computer science, dec 2024
+        </div>
+      </div>
+    </section>
+  );
+}

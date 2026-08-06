@@ -1,8 +1,15 @@
+import Hero from "@/components/sections/Hero";
+import Experience from "@/components/sections/Experience";
+import Software from "@/components/sections/Software";
+import Books from "@/components/sections/Books";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Fatima Villena</h1>
-      <p>Portfolio — rebuilding.</p>
-    </main>
+    <>
+      <Hero />
+      <Experience />
+      <Software />
+      <Books />
+    </>
   );
 }
