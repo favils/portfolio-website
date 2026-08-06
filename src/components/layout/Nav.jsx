@@ -20,7 +20,7 @@ const FOLDERS = [
     items: [{ label: "projects", href: "#software" }],
   },
   {
-    title: "BOOKS",
+    title: "BOOK REVIEWS",
     items: [{ label: "currently-reading", href: "#books" }],
   },
   {
@@ -160,7 +160,7 @@ export default function Nav() {
       <nav className="sticky top-0 z-40 hidden h-screen w-[248px] shrink-0 flex-col justify-between border-r border-hairline bg-void px-7 py-9 lg:flex">
         <div>
           <Link href="#about" className="block font-display text-[28px] leading-none tracking-tight text-paper">
-            Villena
+            Fatima Villena
           </Link>
           <div className="mt-8 border-t border-hairline pt-7">
             <NavTree activeId={activeId} />

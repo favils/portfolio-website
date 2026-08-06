@@ -16,15 +16,15 @@ export default function Hero() {
 
         <RevealOnScroll delay={0.05}>
           <h1 className="mt-6 max-w-3xl font-display text-5xl leading-[1.05] tracking-tight text-paper sm:text-6xl lg:text-7xl">
-            I design things,
+            i design things,
             <br />
-            then I make them work.
+            then make them work.
           </h1>
         </RevealOnScroll>
 
         <RevealOnScroll delay={0.1}>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-paper-dim">
-            Full-stack developer and graphic designer based in Miami, FL.
+            Software Engineer based in Miami, FL.
             NYU CS grad, splitting time between code and design.
           </p>
         </RevealOnScroll>
@@ -68,8 +68,8 @@ export default function Hero() {
             </div>
             <p className="mt-4 text-base leading-relaxed text-paper-dim">
               Full-stack web apps and internal tools, plus computer-vision
-              side projects like an ASL hand-gesture interpreter — shipped
-              as working prototypes, not just demos.
+              side projects like an ASL hand-gesture interpreter.  Working prototypes
+              available down below.
             </p>
           </RevealOnScroll>
 
@@ -78,9 +78,9 @@ export default function Hero() {
               {"{ outside of work }"}
             </div>
             <p className="mt-4 text-base leading-relaxed text-paper-dim">
-              Graphic design, branding, and small side projects — a browser
-              photobooth, an ecommerce store for a friend&apos;s jewelry
-              brand.
+              Graphic design, gaming, and vlog editing. Most nights I'm reading or
+              reviewing sci-fi/fantasy, or in the kitchen experimenting with
+              Latin/South Asian fusion.
             </p>
           </RevealOnScroll>
         </div>

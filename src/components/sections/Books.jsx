@@ -39,8 +39,21 @@ export default async function Books() {
     <section id="books" className="scroll-mt-24 border-t border-hairline">
       <div className="mx-auto max-w-6xl px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
         <SectionHeader
-          title="Books"
-          note="last 3 read — synced from goodreads"
+          title="Book reviews"
+          note={
+            <>
+              last 3 read — because{" "}
+              <a
+                href="https://onlinelibrary.wiley.com/doi/full/10.1002/cite.12011"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Kuhn, “Why Engineers Should Read More Novels”"
+                className="text-paper-faint underline decoration-hairline-bright underline-offset-2 transition-colors hover:text-signal"
+              >
+                the humanities build better engineers
+              </a>
+            </>
+          }
         />
 
         {books.length === 0 ? (

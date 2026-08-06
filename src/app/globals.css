@@ -108,6 +108,18 @@ a {
   font-synthesis-weight: none;
 }
 
+/* --- cursor blob --- */
+.cursor-none,
+.cursor-none * {
+  cursor: none !important;
+}
+
+.cursor-blob {
+  border-radius: 9999px;
+  background: #ffffff;
+  mix-blend-mode: difference;
+}
+
 .dotted-rule {
   background-image: linear-gradient(
     to right,

@@ -4,6 +4,7 @@ import { Space_Mono } from "next/font/google";
 import Nav from "@/components/layout/Nav";
 import GrainOverlay from "@/components/layout/GrainOverlay";
 import CoordinateReadout from "@/components/layout/CoordinateReadout";
+import CursorBlob from "@/components/layout/CursorBlob";
 
 const departureMono = localFont({
   src: "../../public/fonts/DepartureMono-Regular.woff2",
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
         className={`${departureMono.variable} ${spaceMono.variable} font-body`}
       >
         <GrainOverlay />
+        <CursorBlob />
         <div className="relative z-10 mx-auto flex max-w-[1240px] xl:px-10">
           <Nav />
           <main className="min-w-0 flex-1 border-x border-hairline/60">
