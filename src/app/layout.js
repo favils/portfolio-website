@@ -21,10 +21,31 @@ const spaceMono = Space_Mono({
   weight: ["400", "700"],
 });
 
+const title = "Fatima Villena — Engineer / Designer";
+const description =
+  "Portfolio of Fatima Villena, full-stack developer and graphic designer based in Miami, FL.";
+
+const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000";
+
 export const metadata = {
-  title: "Fatima Villena — Engineer / Designer",
-  description:
-    "Portfolio of Fatima Villena, full-stack developer and graphic designer based in Miami, FL.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    type: "website",
+    siteName: title,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export const viewport = {
