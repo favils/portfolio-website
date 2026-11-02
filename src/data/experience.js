@@ -1,7 +1,7 @@
 export const roles = [
   {
     range: "FEB 2026 — PRESENT",
-    title: "Software Engineer Intern, Business Intelligence",
+    title: "Business Intelligence Intern, Software Engineering",
     org: "Inter Miami CF",
     location: "Miami, FL",
     points: [
