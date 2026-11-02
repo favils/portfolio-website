@@ -22,6 +22,7 @@ function Rating({ value }) {
 }
 
 function formatReadDate(dateStr) {
+  if (!dateStr) return null;
   const d = new Date(dateStr);
   if (Number.isNaN(d.getTime())) return null;
   return new Intl.DateTimeFormat("en-US", {

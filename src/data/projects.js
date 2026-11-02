@@ -16,6 +16,16 @@ export const projects = [
     live: "https://liora-d-or.vercel.app/",
   },
   {
+    title: "AgriCore",
+    type: "FULL STACK — OPERATIONS DASHBOARD",
+    category: "engineering",
+    blurb:
+      "Command center for an agricultural cooperative that tracks farms, shared equipment, field hands and jobs, with role-based auth and SQL aggregation endpoints for key operational questions. Deployed on AWS (CloudFront + Lambda).",
+    stack: ["React", "FastAPI", "PostgreSQL", "AWS"],
+    github: "https://github.com/favils/agricore",
+    live: "https://d3fagqqlyphr3m.cloudfront.net",
+  },
+  {
     title: "Resumely",
     image: "/resumely.png",
     type: "WEB APP — RESUME GENERATOR",
